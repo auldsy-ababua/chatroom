@@ -1,12 +1,39 @@
-<!doctype html>
-<title>Chatroom</title>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
 
-<!-- JS -->
-<script src="//code.jquery.com/jquery-2.1.0.js"></script>
-<script src="main.js"></script>
-<!--Socket.IO serves the client library at /socket.io/socket.io.js-->>
-<script src="/socket.io/socket.io.js"></script>
+<head>
+    <title>Chatroom</title>
+    <meta charset="utf-8">
 
-<input type="text">
-<div id="messages"></div>
+
+</head>
+
+<body>
+
+    <div id="numUsers">
+        <p>There are
+            <span id="count">no</span> users online.
+
+        </p>
+    </div>
+
+    <div id="hide">
+        <p>input username here</p>
+        <input id="userName" type="text">
+    </div>
+
+    <br>
+    <div>
+        <p>type message here</p>
+        <input id="message" type="text">
+        <div id="messages"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="//code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="main.js"></script>
+    <!--Socket.IO serves the client library at /socket.io/socket.io.js-->
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
